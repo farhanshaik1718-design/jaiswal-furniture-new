@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart & Checkout | Jaiswal Furniture</title>
+  <meta name="description" content="Review your solid wood furniture selections, enter delivery address, apply coupon codes, and choose secure payment methods.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="jf-topbar">
+    <div class="jf-container jf-topbar-inner">
+      <div class="jf-topbar-msg">
+        <span class="jf-topbar-pill">CHECKOUT</span>
+        Orders above ₹40,000 qualify for <strong>FREE Doorstep White-Glove Installation</strong>
+      </div>
+      <div class="jf-topbar-links">
+        <a href="tel:+919820154890" class="jf-topbar-link">📞 Support: +91 98201 54890</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="jf-header">
+    <div class="jf-container jf-navbar">
+      <a href="index.html" class="jf-brand" aria-label="Jaiswal Furniture Home">
+        <div class="jf-brand-emblem">J</div>
+        <div class="jf-brand-text">
+          <span class="jf-brand-title">Jaiswal Furniture</span>
+          <span class="jf-brand-tagline">Crafted Comfort for Every Home</span>
+        </div>
+      </a>
+
+      <nav class="jf-nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="jf-nav-link">Home</a>
+        <a href="shop.html" class="jf-nav-link">Shop</a>
+        <a href="custom-furniture.html" class="jf-nav-link">Custom Furniture</a>
+        <a href="gallery.html" class="jf-nav-link">Gallery</a>
+        <a href="about.html" class="jf-nav-link">About Us</a>
+        <a href="contact.html" class="jf-nav-link">Contact</a>
+      </nav>
+
+      <div class="jf-header-actions">
+        <button class="jf-action-btn js-open-search" aria-label="Search catalog" title="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <a href="shop.html" class="jf-action-btn" aria-label="Wishlist" title="Wishlist">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="jf-badge-count js-wishlist-count" style="display: none;">0</span>
+        </a>
+
+        <button class="jf-action-btn js-open-cart" aria-label="Open Cart" title="Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-2z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="jf-badge-count js-cart-count" style="display: none;">0</span>
+        </button>
+
+        <button class="jf-mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="jf-mobile-overlay"></div>
+  <aside class="jf-mobile-nav" aria-label="Mobile Navigation">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="jf-brand">
+        <div class="jf-brand-emblem">J</div>
+        <span class="jf-brand-title" style="font-size: 1.15rem;">Jaiswal</span>
+      </div>
+      <button class="jf-icon-btn" onclick="document.querySelector('.jf-mobile-toggle').click();">&times;</button>
+    </div>
+    <nav class="jf-mobile-menu">
+      <a href="index.html" class="jf-mobile-nav-link">Home</a>
+      <a href="shop.html" class="jf-mobile-nav-link">Shop Catalog</a>
+      <a href="custom-furniture.html" class="jf-mobile-nav-link">Custom Furniture</a>
+      <a href="gallery.html" class="jf-mobile-nav-link">Our Work Gallery</a>
+      <a href="about.html" class="jf-mobile-nav-link">About Us</a>
+      <a href="contact.html" class="jf-mobile-nav-link">Contact & Showrooms</a>
+      <a href="cart.html" class="jf-mobile-nav-link is-current">Shopping Cart & Checkout</a>
+    </nav>
+  </aside>
+
+  <main id="main-content">
+    <div class="jf-container" style="padding-top: 30px;">
+      <h1 style="font-size: clamp(2rem, 3.2vw, 2.6rem); color: var(--color-walnut-900); margin-bottom: 8px;">
+        Review Cart & Checkout
+      </h1>
+      <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 30px;">
+        All orders include complimentary transit insurance and on-site assembly by company carpenters.
+      </p>
+
+      <!-- Empty State View -->
+      <div id="jf-cart-empty-state" class="jf-shop-empty" style="display: none; margin: 40px 0 80px;">
+        <div class="jf-shop-empty-icon">🛋️</div>
+        <h3 style="font-size: 1.4rem; margin-bottom: 8px;">Your shopping bag is currently empty</h3>
+        <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 24px;">
+          Explore our handcrafted solid wood catalog to add dining tables, curved sofas, or hydraulic beds.
+        </p>
+        <a href="shop.html" class="jf-btn jf-btn-primary jf-btn-lg">Browse Collections →</a>
+      </div>
+
+      <!-- Main Two-Column Layout -->
+      <div id="jf-cart-layout" class="jf-checkout-layout">
+        <!-- Left: Steps (Items -> Address -> Payment) -->
+        <div>
+          <!-- Step 1: Items List -->
+          <div class="jf-checkout-box">
+            <h3 class="jf-checkout-step-title">
+              <span class="jf-step-num">1</span>
+              <span>Selected Furniture Pieces</span>
+            </h3>
+
+            <div id="jf-full-cart-items">
+              <!-- Rendered dynamically by checkout.js -->
+            </div>
+          </div>
+
+          <!-- Step 2: Shipping Address -->
+          <div class="jf-checkout-box" id="jf-step-address">
+            <h3 class="jf-checkout-step-title">
+              <span class="jf-step-num">2</span>
+              <span>Delivery Address & Contact</span>
+            </h3>
+
+            <div class="jf-form-row">
+              <div class="jf-form-group">
+                <label class="jf-form-label" for="jf-ship-name">Recipient Full Name *</label>
+                <input type="text" id="jf-ship-name" class="jf-form-input" placeholder="e.g. Vikram Malhotra" value="Vikram Malhotra" required>
+              </div>
+
+              <div class="jf-form-group">
+                <label class="jf-form-label" for="jf-ship-phone">Contact Mobile Number *</label>
+                <input type="tel" id="jf-ship-phone" class="jf-form-input" placeholder="e.g. +91 98200 55443" value="+91 98200 55443" required>
+              </div>
+            </div>
+
+            <div class="jf-form-group">
+              <label class="jf-form-label" for="jf-ship-address">Street Address, Apartment / Villa Details *</label>
+              <textarea id="jf-ship-address" class="jf-form-textarea" rows="2" placeholder="Building name, flat number, street..." required>Flat 1402, Imperial Towers, Tardeo, Mumbai 400034</textarea>
+            </div>
+
+            <div class="jf-form-row">
+              <div class="jf-form-group">
+                <label class="jf-form-label" for="jf-ship-city">City / State *</label>
+                <input type="text" id="jf-ship-city" class="jf-form-input" value="Mumbai, Maharashtra" required>
+              </div>
+
+              <div class="jf-form-group">
+                <label class="jf-form-label" for="jf-ship-pin">Pincode *</label>
+                <input type="text" id="jf-ship-pin" class="jf-form-input" value="400034" required>
+              </div>
+            </div>
+
+            <button type="button" id="jf-goto-payment-btn" class="jf-btn jf-btn-outline jf-btn-sm" style="margin-top: 10px;">
+              Save & Proceed to Payment Selection ↓
+            </button>
+          </div>
+
+          <!-- Step 3: Payment Options -->
+          <div class="jf-checkout-box" id="jf-step-payment">
+            <h3 class="jf-checkout-step-title">
+              <span class="jf-step-num">3</span>
+              <span>Payment Method</span>
+            </h3>
+
+            <div class="jf-payment-methods">
+              <!-- Option 1: Cash on Delivery -->
+              <label class="jf-payment-option is-selected">
+                <div class="jf-payment-option-left">
+                  <input type="radio" name="jf_payment_method" value="cod" checked>
+                  <div>
+                    <strong style="font-size: 0.95rem; display: block;">Cash on Delivery (Pay upon Assembly)</strong>
+                    <span style="font-size: 0.8rem; color: var(--color-text-muted);">Inspect the timber craftsmanship and joinery before paying the technician.</span>
+                  </div>
+                </div>
+                <span>💵</span>
+              </label>
+
+              <!-- Option 2: UPI / QR Code -->
+              <label class="jf-payment-option">
+                <div class="jf-payment-option-left">
+                  <input type="radio" name="jf_payment_method" value="upi">
+                  <div>
+                    <strong style="font-size: 0.95rem; display: block;">Instant UPI / QR Code (Google Pay, PhonePe, Paytm)</strong>
+                    <span style="font-size: 0.8rem; color: var(--color-text-muted);">Scan dynamic QR code on delivery screen with instant confirmation.</span>
+                  </div>
+                </div>
+                <span>📱</span>
+              </label>
+
+              <!-- UPI Simulation Box -->
+              <div id="jf-upi-box" class="jf-upi-qr-card" style="display: none;">
+                <span class="jf-badge">Simulated Instant UPI</span>
+                <p style="font-size: 0.85rem; margin-top: 8px;">Scan with Google Pay, PhonePe, or BHIM app:</p>
+                <div class="jf-qr-code-img">
+                  <!-- Simulated stylized QR representation -->
+                  <svg width="160" height="160" viewBox="0 0 24 24" fill="none" stroke="#27170E" stroke-width="1.5">
+                    <rect x="2" y="2" width="8" height="8" rx="1"/>
+                    <rect x="14" y="2" width="8" height="8" rx="1"/>
+                    <rect x="2" y="14" width="8" height="8" rx="1"/>
+                    <rect x="5" y="5" width="2" height="2" fill="#27170E"/>
+                    <rect x="17" y="5" width="2" height="2" fill="#27170E"/>
+                    <rect x="5" y="17" width="2" height="2" fill="#27170E"/>
+                    <line x1="14" y1="14" x2="18" y2="14"/>
+                    <line x1="14" y1="18" x2="14" y2="22"/>
+                    <line x1="18" y1="18" x2="22" y2="18"/>
+                    <line x1="22" y1="14" x2="22" y2="22"/>
+                  </svg>
+                </div>
+                <strong style="font-size: 0.9rem; color: var(--color-walnut-900);">UPI VPA: pay@jaiswalfurniture</strong>
+              </div>
+
+              <!-- Option 3: Credit/Debit Card -->
+              <label class="jf-payment-option">
+                <div class="jf-payment-option-left">
+                  <input type="radio" name="jf_payment_method" value="card">
+                  <div>
+                    <strong style="font-size: 0.95rem; display: block;">Credit / Debit Card / Net Banking</strong>
+                    <span style="font-size: 0.8rem; color: var(--color-text-muted);">Visa, MasterCard, RuPay with zero surcharge.</span>
+                  </div>
+                </div>
+                <span>💳</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Order Summary Card -->
+        <aside>
+          <div class="jf-checkout-box" style="position: sticky; top: 100px;">
+            <h3 style="font-size: 1.3rem; font-family: var(--font-serif); margin-bottom: 18px;">Order Summary</h3>
+
+            <!-- Coupon Form -->
+            <form id="jf-coupon-form" class="jf-coupon-card">
+              <input type="text" id="jf-coupon-input" class="jf-form-input" placeholder="Coupon Code (e.g. JAISWAL10)" style="text-transform: uppercase;">
+              <button type="submit" class="jf-btn jf-btn-gold" style="white-space: nowrap; padding: 10px 18px;">Apply</button>
+            </form>
+            <span style="font-size: 0.75rem; color: var(--color-gold-600); display: block; margin-top: -10px; margin-bottom: 18px;">
+              💡 Use promo code <strong>JAISWAL10</strong> for 10% festive discount!
+            </span>
+
+            <div style="display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem; padding: 16px 0; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+              <div style="display: flex; justify-content: space-between;">
+                <span>Cart Subtotal</span>
+                <span id="jf-cart-subtotal" style="font-weight: 600;">₹0</span>
+              </div>
+
+              <div id="jf-cart-discount-row" style="display: none; justify-content: space-between; color: #2e7d32; font-weight: 600;">
+                <span>Festive Discount</span>
+                <span id="jf-cart-discount-amt">- ₹0</span>
+              </div>
+
+              <div style="display: flex; justify-content: space-between;">
+                <span>White-Glove Delivery & Assembly</span>
+                <span id="jf-cart-shipping">₹0</span>
+              </div>
+
+              <div style="display: flex; justify-content: space-between; color: var(--color-text-light); font-size: 0.8rem;">
+                <span>GST (18% Included)</span>
+                <span>Calculated</span>
+              </div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin: 20px 0 24px;">
+              <span style="font-size: 1.1rem; font-weight: 700; color: var(--color-walnut-900);">Grand Total</span>
+              <span id="jf-cart-grand-total" style="font-size: 1.8rem; font-weight: 700; color: var(--color-walnut-900); font-family: var(--font-serif);">₹0</span>
+            </div>
+
+            <button type="button" id="jf-place-order-btn" class="jf-btn jf-btn-primary jf-btn-lg jf-btn-block">
+              Place Order & Generate Invoice
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+
+            <div class="jf-drawer-perks" style="margin-top: 24px;">
+              <span>🛡️ 10-Yr Warranty</span>
+              <span>🪵 100% Solid Hardwood</span>
+              <span>🔒 256-Bit SSL</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="jf-footer">
+    <div class="jf-container">
+      <div class="jf-footer-grid">
+        <div>
+          <div class="jf-brand">
+            <div class="jf-brand-emblem" style="background: var(--color-gold-500); color: var(--color-walnut-950);">J</div>
+            <div class="jf-brand-text">
+              <span class="jf-brand-title" style="color: #fff;">Jaiswal Furniture</span>
+              <span class="jf-brand-tagline" style="color: var(--color-gold-400);">Est. 1989 • Mumbai</span>
+            </div>
+          </div>
+          <p class="jf-footer-brand-desc">
+            Handcrafting generational solid wood furniture with heirloom integrity. Grade-A seasoned Teakwood, Indian Sheesham, and American Walnut tailored for discerning residences.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="jf-footer-col-title">Navigation</h4>
+          <ul class="jf-footer-links">
+            <li><a href="index.html" class="jf-footer-link">Home</a></li>
+            <li><a href="shop.html" class="jf-footer-link">Shop Catalog</a></li>
+            <li><a href="custom-furniture.html" class="jf-footer-link">Custom Made-to-Order</a></li>
+            <li><a href="gallery.html" class="jf-footer-link">Portfolio</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="jf-footer-col-title">Showroom</h4>
+          <div class="jf-footer-contact-list">
+            <div class="jf-footer-contact-item">
+              <span class="jf-footer-contact-icon">📍</span>
+              <span>Plot 42, Lower Parel West, Mumbai 400013</span>
+            </div>
+            <div class="jf-footer-contact-item">
+              <span class="jf-footer-contact-icon">📞</span>
+              <span>+91 98201 54890</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="jf-footer-col-title">Payment Security</h4>
+          <p style="font-size: 0.85rem; color: rgba(255,255,255,0.7); line-height: 1.6;">
+            We accept all Indian debit/credit cards, NetBanking, UPI, and Cash on Delivery with full transit insurance.
+          </p>
+        </div>
+      </div>
+
+      <div class="jf-footer-bottom">
+        <div>&copy; 1989–2026 Jaiswal Furniture Ltd. All Rights Reserved.</div>
+        <div class="jf-payment-chips">
+          <span class="jf-pay-chip">UPI</span>
+          <span class="jf-pay-chip">RuPay</span>
+          <span class="jf-pay-chip">Visa</span>
+          <span class="jf-pay-chip">Mastercard</span>
+          <span class="jf-pay-chip">Cash on Delivery</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>

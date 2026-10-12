@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Work & Architectural Gallery | Jaiswal Furniture</title>
+  <meta name="description" content="Explore completed luxury homes, villas, and boutique spaces styled with Jaiswal Furniture solid wood creations. Masonry photo gallery with interactive zoom.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="jf-topbar">
+    <div class="jf-container jf-topbar-inner">
+      <div class="jf-topbar-msg">
+        <span class="jf-topbar-pill">PORTFOLIO</span>
+        Over 15,000 Luxury Homes & Penthouses Handcrafted Nationwide
+      </div>
+      <div class="jf-topbar-links">
+        <a href="custom-furniture.html" class="jf-topbar-link">📐 Custom Furniture Consultation</a>
+        <a href="tel:+919820154890" class="jf-topbar-link">📞 +91 98201 54890</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="jf-header">
+    <div class="jf-container jf-navbar">
+      <a href="index.html" class="jf-brand" aria-label="Jaiswal Furniture Home">
+        <div class="jf-brand-emblem">J</div>
+        <div class="jf-brand-text">
+          <span class="jf-brand-title">Jaiswal Furniture</span>
+          <span class="jf-brand-tagline">Crafted Comfort for Every Home</span>
+        </div>
+      </a>
+
+      <nav class="jf-nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="jf-nav-link">Home</a>
+        <a href="shop.html" class="jf-nav-link">Shop</a>
+        <a href="custom-furniture.html" class="jf-nav-link">Custom Furniture</a>
+        <a href="gallery.html" class="jf-nav-link is-current">Gallery</a>
+        <a href="about.html" class="jf-nav-link">About Us</a>
+        <a href="contact.html" class="jf-nav-link">Contact</a>
+      </nav>
+
+      <div class="jf-header-actions">
+        <button class="jf-action-btn js-open-search" aria-label="Search catalog" title="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <a href="shop.html" class="jf-action-btn" aria-label="Wishlist" title="Wishlist">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="jf-badge-count js-wishlist-count" style="display: none;">0</span>
+        </a>
+
+        <button class="jf-action-btn js-open-cart" aria-label="Open Cart" title="Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-2z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="jf-badge-count js-cart-count" style="display: none;">0</span>
+        </button>
+
+        <button class="jf-mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="jf-mobile-overlay"></div>
+  <aside class="jf-mobile-nav" aria-label="Mobile Navigation">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="jf-brand">
+        <div class="jf-brand-emblem">J</div>
+        <span class="jf-brand-title" style="font-size: 1.15rem;">Jaiswal</span>
+      </div>
+      <button class="jf-icon-btn" onclick="document.querySelector('.jf-mobile-toggle').click();">&times;</button>
+    </div>
+    <nav class="jf-mobile-menu">
+      <a href="index.html" class="jf-mobile-nav-link">Home</a>
+      <a href="shop.html" class="jf-mobile-nav-link">Shop Catalog</a>
+      <a href="custom-furniture.html" class="jf-mobile-nav-link">Custom Furniture</a>
+      <a href="gallery.html" class="jf-mobile-nav-link is-current">Our Work Gallery</a>
+      <a href="about.html" class="jf-mobile-nav-link">About Us</a>
+      <a href="contact.html" class="jf-mobile-nav-link">Contact & Showrooms</a>
+      <a href="cart.html" class="jf-mobile-nav-link">Shopping Cart & Checkout</a>
+    </nav>
+  </aside>
+
+  <main id="main-content">
+    <div class="jf-container" style="padding-top: 40px;">
+      <div style="text-align: center; max-width: 680px; margin: 0 auto 30px;">
+        <span class="jf-section-eyebrow">Project Portfolio</span>
+        <h1 style="font-size: clamp(2.2rem, 3.8vw, 3rem); color: var(--color-walnut-900); margin-bottom: 12px;">
+          Spaces Transformed by Solid Wood
+        </h1>
+        <p style="color: var(--color-text-muted); font-size: 1.05rem; line-height: 1.6;">
+          Browse a selection of completed residential interiors, heritage apartments, and luxury villas custom built by our master craftsmen. Click any photograph to view detailed architectural specifications.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="jf-gallery-filter-nav">
+        <button class="jf-gallery-tab-btn is-active" data-filter="all">All Projects</button>
+        <button class="jf-gallery-tab-btn" data-filter="living">Living Rooms</button>
+        <button class="jf-gallery-tab-btn" data-filter="dining">Dining Spaces</button>
+        <button class="jf-gallery-tab-btn" data-filter="bedroom">Master Bedrooms</button>
+        <button class="jf-gallery-tab-btn" data-filter="office">Executive Offices</button>
+        <button class="jf-gallery-tab-btn" data-filter="bespoke">Pooja Mandir / Sacred</button>
+        <button class="jf-gallery-tab-btn" data-filter="outdoor">Verandas & Patio</button>
+      </div>
+
+      <!-- Masonry Gallery Grid -->
+      <div class="jf-masonry-grid" id="jf-masonry-gallery">
+        <!-- Rendered dynamically by js/gallery.js -->
+      </div>
+
+      <!-- Bottom Banner -->
+      <div style="background: var(--color-cream-200); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 50px; text-align: center; margin-bottom: 80px;">
+        <h3 style="font-size: 1.8rem; font-family: var(--font-serif); margin-bottom: 10px;">Inspired by one of our installations?</h3>
+        <p style="color: var(--color-text-muted); font-size: 1rem; max-width: 580px; margin: 0 auto 24px;">
+          Our design consultants can recreate any project aesthetic, customized precisely to your floor plan dimensions and wood choice.
+        </p>
+        <a href="custom-furniture.html" class="jf-btn jf-btn-primary jf-btn-lg">
+          Start Your Custom Project →
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="jf-footer">
+    <div class="jf-container">
+      <div class="jf-footer-grid">
+        <div>
+          <div class="jf-brand">
+            <div class="jf-brand-emblem" style="background: var(--color-gold-500); color: var(--color-walnut-950);">J</div>
+            <div class="jf-brand-text">
+              <span class="jf-brand-title" style="color: #fff;">Jaiswal Furniture</span>
+              <span class="jf-brand-tagline" style="color: var(--color-gold-400);">Est. 1989 • Mumbai</span>
+            </div>
+          </div>
+          <p class="jf-footer-brand-desc">
+            Handcrafting generational solid wood furniture with heirloom integrity. Grade-A seasoned Teakwood, Indian Sheesham, and American Walnut tailored for discerning residences.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="jf-footer-col-title">Portfolio</h4>
+          <ul class="jf-footer-links">
+            <li><a href="gallery.html" class="jf-footer-link">Living Room Projects</a></li>
+            <li><a href="gallery.html" class="jf-footer-link">Dining Room Projects</a></li>
+            <li><a href="gallery.html" class="jf-footer-link">Bedroom Sanctuaries</a></li>
+            <li><a href="gallery.html" class="jf-footer-link">Custom Mandirs</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="jf-footer-col-title">Concierge</h4>
+          <ul class="jf-footer-links">
+            <li><a href="custom-furniture.html" class="jf-footer-link">Bespoke Custom Orders</a></li>
+            <li><a href="contact.html" class="jf-footer-link">Book Showroom Visit</a></li>
+            <li><a href="about.html" class="jf-footer-link">Artisanal Heritage</a></li>
+            <li><a href="shop.html" class="jf-footer-link">Catalog</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="jf-footer-col-title">Experience Centre</h4>
+          <div class="jf-footer-contact-list">
+            <div class="jf-footer-contact-item">
+              <span class="jf-footer-contact-icon">📍</span>
+              <span>Plot 42, Jaiswal Heritage Lane, Lower Parel West, Mumbai</span>
+            </div>
+            <div class="jf-footer-contact-item">
+              <span class="jf-footer-contact-icon">📞</span>
+              <span>+91 98201 54890</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="jf-footer-bottom">
+        <div>&copy; 1989–2026 Jaiswal Furniture Ltd. All Rights Reserved.</div>
+        <div class="jf-payment-chips">
+          <span class="jf-pay-chip">UPI</span>
+          <span class="jf-pay-chip">RuPay</span>
+          <span class="jf-pay-chip">Visa</span>
+          <span class="jf-pay-chip">Mastercard</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaiswal Furniture | Transform Your Space. Elevate Your Living. — Est. 1989</title>
+  <meta name="description" content="Discover premium handcrafted solid wood furniture by Jaiswal Furniture. Kiln-dried Teak & Sheesham sofas, dining tables, hydraulic beds, and bespoke cabinetry. Free white-glove installation.">
+  <meta name="keywords" content="solid wood furniture, teak wood dining table, sheesham bed, bespoke custom furniture, luxury living room, jaiswal furniture mumbai">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Jaiswal Furniture — Transform Your Space. Elevate Your Living.">
+  <meta property="og:description" content="Generational Indian solid wood furniture. 100% Seasoned Hardwood, Free White-Glove Installation & 10-Year Warranty.">
+  <meta property="og:type" content="website">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+  <!-- Modern Navigation Bar (Transparent over hero, Sticky with blur & cream on scroll) -->
+  <header class="jf-header jf-header--hero" id="site-header">
+    <div class="jf-container jf-navbar">
+      <!-- Website Logo & Brand Name -->
+      <a href="index.html" class="jf-brand" aria-label="Jaiswal Furniture Home">
+        <div class="jf-brand-emblem">J</div>
+        <div class="jf-brand-text">
+          <span class="jf-brand-title">Jaiswal Furniture</span>
+          <span class="jf-brand-tagline">Crafted Comfort for Every Home</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="jf-nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="jf-nav-link is-current">Home</a>
+        <a href="shop.html?category=sofas" class="jf-nav-link">Living Room</a>
+        <a href="shop.html?category=beds" class="jf-nav-link">Bedroom</a>
+        <a href="shop.html?category=dining" class="jf-nav-link">Dining Room</a>
+        <a href="shop.html?category=office" class="jf-nav-link">Office Furniture</a>
+        <a href="#featured-collections" class="jf-nav-link">Collections</a>
+        <a href="about.html" class="jf-nav-link">About Us</a>
+        <a href="contact.html" class="jf-nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Icons: Search, Account/Wishlist, Shopping Cart -->
+      <div class="jf-header-actions">
+        <!-- Search Trigger -->
+        <button class="jf-action-btn js-open-search" aria-label="Search catalog" title="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <!-- Account / Concierge -->
+        <a href="contact.html#concierge" class="jf-action-btn" aria-label="Account & Showroom Concierge" title="Account & Concierge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </a>
+
+        <!-- Wishlist -->
+        <a href="shop.html" class="jf-action-btn" aria-label="Wishlist" title="Wishlist">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="jf-badge-count js-wishlist-count" style="display: none;">0</span>
+        </a>
+
+        <!-- Shopping Cart Trigger -->
+        <button class="jf-action-btn js-open-cart" aria-label="Open Cart" title="Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-2z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="jf-badge-count js-cart-count" style="display: none;">0</span>
+        </button>
+
+        <!-- Mobile Toggle Button -->
+        <button class="jf-mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="jf-mobile-overlay"></div>
+  <aside class="jf-mobile-nav" aria-label="Mobile Navigation">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="jf-brand">
+        <div class="jf-brand-emblem">J</div>
+        <div class="jf-brand-text">
+          <span class="jf-brand-title" style="font-size: 1.15rem;">Jaiswal</span>
+          <span class="jf-brand-tagline">Est. 1989</span>
+        </div>
+      </div>
+      <button class="jf-icon-btn" onclick="document.querySelector('.jf-mobile-toggle').click();" aria-label="Close menu">&times;</button>
+    </div>
+    <nav class="jf-mobile-menu">
+      <a href="index.html" class="jf-mobile-nav-link is-current">Home</a>
+      <a href="shop.html?category=sofas" class="jf-mobile-nav-link">Living Room</a>
+      <a href="shop.html?category=beds" class="jf-mobile-nav-link">Bedroom</a>
+      <a href="shop.html?category=dining" class="jf-mobile-nav-link">Dining Room</a>
+      <a href="shop.html?category=office" class="jf-mobile-nav-link">Office Furniture</a>
+      <a href="#featured-collections" class="jf-mobile-nav-link">Collections</a>
+      <a href="custom-furniture.html" class="jf-mobile-nav-link">Custom Made-to-Order</a>
+      <a href="gallery.html" class="jf-mobile-nav-link">Our Work Gallery</a>
+      <a href="about.html" class="jf-mobile-nav-link">About Us</a>
+      <a href="contact.html" class="jf-mobile-nav-link">Contact & Showrooms</a>
+      <a href="cart.html" class="jf-mobile-nav-link">Shopping Cart & Checkout</a>
+    </nav>
+    <div style="margin-top: auto; padding-top: 20px; border-top: 1px solid var(--color-border);">
+      <p style="font-size: 0.8rem; color: var(--color-text-muted); margin-bottom: 6px;">Showroom Concierge (Mumbai):</p>
+      <a href="tel:+919820154890" style="font-size: 0.95rem; font-weight: 700; color: var(--color-walnut-900);">+91 98201 54890</a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- 1. FULL-SCREEN HOMEPAGE HERO SECTION (100vh) -->
+    <section class="jf-hero-fullscreen" id="hero">
+      <div class="jf-hero-fullscreen-bg" aria-hidden="true"></div>
+      <div class="jf-hero-fullscreen-overlay" aria-hidden="true"></div>
+
+      <!-- Hero Content -->
+      <div class="jf-hero-fullscreen-content">
+        <span class="jf-hero-tag">
+          Heirloom Solid Wood Living • Est. 1989
+        </span>
+        <h1 class="jf-hero-title">
+          Transform Your Space.<br><em>Elevate Your Living.</em>
+        </h1>
+        <p class="jf-hero-desc">
+          Discover timeless furniture designed for comfort, beauty, and everyday living. Handcrafted from 100% seasoned solid Teakwood, Sheesham & American Walnut.
+        </p>
+        <div class="jf-hero-cta-group">
+          <a href="#categories" class="jf-btn jf-btn-gold jf-btn-lg">
+            Explore Collection
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="shop.html" class="jf-btn jf-btn-outline-white jf-btn-lg">
+            Shop Now
+          </a>
+        </div>
+      </div>
+
+      <!-- Floating Interactive Luxury Product Tags -->
+      <div class="jf-hero-floating-tag jf-hero-tag-1">
+        <span>🛋️ Aura Sculptural Sofa</span>
+        <span class="jf-hero-tag-price">₹64,999</span>
+      </div>
+      <div class="jf-hero-floating-tag jf-hero-tag-2">
+        <span>🪵 100% Seasoned CP Teak</span>
+        <span class="jf-hero-tag-price">10-Yr Warranty</span>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#categories" class="jf-hero-scroll-btn" aria-label="Scroll down to explore categories">
+        <span>Scroll to Explore</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+        </svg>
+      </a>
+    </section>
+
+    <!-- Verified Metric Strip -->
+    <div class="jf-container jf-stats-strip-wrap">
+      <div class="jf-hero-stats">
+        <div class="jf-stat-pill">
+          <div class="jf-stat-icon">🏛️</div>
+          <div>
+            <div class="jf-stat-num">35+ Years</div>
+            <div class="jf-stat-label">Artisanal Wood Heritage</div>
+          </div>
+        </div>
+        <div class="jf-stat-pill">
+          <div class="jf-stat-icon">🪵</div>
+          <div>
+            <div class="jf-stat-num">100% Solid</div>
+            <div class="jf-stat-label">Zero MDF or Particle Board</div>
+          </div>
+        </div>
+        <div class="jf-stat-pill">
+          <div class="jf-stat-icon">🚚</div>
+          <div>
+            <div class="jf-stat-num">White-Glove</div>
+            <div class="jf-stat-label">Free Pan-India Assembly</div>
+          </div>
+        </div>
+        <div class="jf-stat-pill">
+          <div class="jf-stat-icon">⭐</div>
+          <div>
+            <div class="jf-stat-num">4.9 / 5.0</div>
+            <div class="jf-stat-label">Over 15,000 Happy Homes</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION A — SHOP BY CATEGORY -->
+    <section class="jf-section" id="categories">
+      <div class="jf-container">
+        <div class="jf-section-header">
+          <div class="jf-section-title-wrap">
+            <span class="jf-section-eyebrow">Curated Living Spaces</span>
+            <h2 class="jf-section-title">Shop by Category</h2>
+            <p class="jf-section-desc">Explore handcrafted solid wood collections tailored for every corner of your home, joined with traditional mortise techniques.</p>
+          </div>
+          <a href="shop.html" class="jf-btn jf-btn-outline">View Complete Catalog →</a>
+        </div>
+
+        <div class="jf-categories-grid">
+          <!-- Card 1: Living Room (Panoramic 6 cols) -->
+          <a href="shop.html?category=sofas" class="jf-category-card jf-category-card--span-6">
+            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=80" 
+                 alt="Luxury Living Room Sofas and Sectionals" 
+                 class="jf-category-card-img" 
+                 loading="lazy">
+            <div class="jf-category-card-overlay"></div>
+            <div class="jf-category-card-content">
+              <span class="jf-category-count">42+ Handcrafted Designs</span>
+              <h3 class="jf-category-card-title">Living Room</h3>
+              <p class="jf-category-card-desc">Curved architectural sofas, bouclé sectionals, accent armchairs, and solid wood coffee tables.</p>
+              <span class="jf-category-card-link">Explore Living Room →</span>
+            </div>
+          </a>
+
+          <!-- Card 2: Bedroom (Panoramic 6 cols) -->
+          <a href="shop.html?category=beds" class="jf-category-card jf-category-card--span-6">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80" 
+                 alt="Solid Wood Beds and Headboards" 
+                 class="jf-category-card-img" 
+                 loading="lazy">
+            <div class="jf-category-card-overlay"></div>
+            <div class="jf-category-card-content">
+              <span class="jf-category-count">35+ Handcrafted Designs</span>
+              <h3 class="jf-category-card-title">Bedroom</h3>
+              <p class="jf-category-card-desc">King & Queen beds with smooth German hydraulic storage, nightstands, and fluted teak wardrobes.</p>
+              <span class="jf-category-card-link">Explore Bedroom →</span>
+            </div>
+          </a>
+
+          <!-- Card 3: Dining Room (4 cols) -->
+          <a href="shop.html?category=dining" class="jf-category-card jf-category-card--span-4">
+            <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=900&q=80" 
+                 alt="Solid Teak Dining Tables and French Cane Chairs" 
+                 class="jf-category-card-img" 
+                 loading="lazy">
+            <div class="jf-category-card-overlay"></div>
+            <div class="jf-category-card-content">
+              <span class="jf-category-count">28+ Handcrafted Designs</span>
+              <h3 class="jf-category-card-title">Dining Room</h3>
+              <p class="jf-category-card-desc">4, 6 & 8-seater solid CP Teak tables with hand-woven French cane chairs.</p>
+              <span class="jf-category-card-link">Explore Dining →</span>
+            </div>
+          </a>
+
+          <!-- Card 4: Office (4 cols) -->
+          <a href="shop.html?category=office" class="jf-category-card jf-category-card--span-4">
+            <img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=900&q=80" 
+                 alt="Executive Solid Wood Study Desks and Seating" 
+                 class="jf-category-card-img" 
+                 loading="lazy">
+            <div class="jf-category-card-overlay"></div>
+            <div class="jf-category-card-content">
+              <span class="jf-category-count">19+ Handcrafted Designs</span>
+              <h3 class="jf-category-card-title">Office Furniture</h3>
+              <p class="jf-category-card-desc">Executive solid walnut study desks, ergonomic chairs, credenzas, and library bookcases.</p>
+              <span class="jf-category-card-link">Explore Office →</span>
+            </div>
+          </a>
+
+          <!-- Card 5: Home Décor & Accents (4 cols) -->
+          <a href="shop.html" class="jf-category-card jf-category-card--span-4">
+            <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=900&q=80" 
+                 alt="Lamps, Rugs, Mirrors and Home Decor" 
+                 class="jf-category-card-img" 
+                 loading="lazy">
+            <div class="jf-category-card-overlay"></div>
+            <div class="jf-category-card-content">
+              <span class="jf-category-count">26+ Curated Accents</span>
+              <h3 class="jf-category-card-title">Home Décor</h3>
+              <p class="jf-category-card-desc">Sculptural ceramic lamps, woven wool rugs, arched floor mirrors, and heirloom brass accents.</p>
+              <span class="jf-category-card-link">Explore Décor →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION B — FEATURED COLLECTIONS (EDITORIAL STYLE) -->
+    <section class="jf-section" id="featured-collections" style="background: var(--color-surface); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+      <div class="jf-container">
+        <div class="jf-section-header">
+          <div class="jf-section-title-wrap">
+            <span class="jf-section-eyebrow">Editorial Showcase</span>
+            <h2 class="jf-section-title">Featured Collections</h2>
+            <p class="jf-section-desc">Signature design narratives celebrating organic grain patterns, architectural lines, and generational Indian woodcraft.</p>
+          </div>
+          <a href="gallery.html" class="jf-btn jf-btn-outline">View Workshop Portfolio →</a>
+        </div>
+
+        <div class="jf-editorial-grid">
+          <!-- Collection 1 -->
+          <article class="jf-editorial-card">
+            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80" 
+                 alt="The Royal Teak Sanctuary Collection" 
+                 class="jf-editorial-img" 
+                 loading="lazy">
+            <div class="jf-editorial-overlay"></div>
+            <div class="jf-editorial-content">
+              <span class="jf-editorial-badge">Central Province Teak</span>
+              <h3 class="jf-editorial-title">The Royal Teak Sanctuary</h3>
+              <p class="jf-editorial-desc">Grade-A seasoned CP Teak finished with organic botanical oils for luminous warm depth, soft contours, and timeless presence.</p>
+              <a href="shop.html?category=dining" class="jf-editorial-btn">
+                Explore Teak Collection →
+              </a>
+            </div>
+          </article>
+
+          <!-- Collection 2 -->
+          <article class="jf-editorial-card">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&q=80" 
+                 alt="Sculptural Bouclé & American Walnut Collection" 
+                 class="jf-editorial-img" 
+                 loading="lazy">
+            <div class="jf-editorial-overlay"></div>
+            <div class="jf-editorial-content">
+              <span class="jf-editorial-badge">Contemporary Silhouettes</span>
+              <h3 class="jf-editorial-title">Sculptural Bouclé & Walnut</h3>
+              <p class="jf-editorial-desc">Sensuous organic curves meeting kiln-dried walnut frames and textured Italian bouclé upholstery designed for pure cocooning.</p>
+              <a href="shop.html?category=sofas" class="jf-editorial-btn">
+                Discover Modern Curves →
+              </a>
+            </div>
+          </article>
+
+          <!-- Collection 3 -->
+          <article class="jf-editorial-card">
+            <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=1200&q=80" 
+                 alt="Heritage Dining & Cane Craft Collection" 
+                 class="jf-editorial-img" 
+                 loading="lazy">
+            <div class="jf-editorial-overlay"></div>
+            <div class="jf-editorial-content">
+              <span class="jf-editorial-badge">Artisanal Weave</span>
+              <h3 class="jf-editorial-title">Heritage Dining & Cane Craft</h3>
+              <p class="jf-editorial-desc">Generational dining tables flanked by hand-woven natural French cane chairs and brushed brass hardware that ages gracefully.</p>
+              <a href="shop.html?category=dining" class="jf-editorial-btn">
+                View Dining Suites →
+              </a>
+            </div>
+          </article>
+
+          <!-- Collection 4 -->
+          <article class="jf-editorial-card">
+            <img src="https://images.unsplash.com/photo-1505409859467-3a796fd5798e?auto=format&fit=crop&w=1200&q=80" 
+                 alt="Executive Study & Library Workspace Collection" 
+                 class="jf-editorial-img" 
+                 loading="lazy">
+            <div class="jf-editorial-overlay"></div>
+            <div class="jf-editorial-content">
+              <span class="jf-editorial-badge">Bespoke Workspace</span>
+              <h3 class="jf-editorial-title">Executive Study & Library</h3>
+              <p class="jf-editorial-desc">Leather-inlaid study desks with integrated wire routing, slatted credenzas, and modular bookcases built for focused minds.</p>
+              <a href="shop.html?category=office" class="jf-editorial-btn">
+                Explore Workspaces →
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION C — BEST SELLERS -->
+    <section class="jf-section" id="best-sellers">
+      <div class="jf-container">
+        <div class="jf-section-header">
+          <div class="jf-section-title-wrap">
+            <span class="jf-section-eyebrow">Signature Creations</span>
+            <h2 class="jf-section-title">Best Sellers</h2>
+            <p class="jf-section-desc">Our most coveted pieces, handcrafted in 100% solid timber and chosen by over 15,000 discerning homes across India.</p>
+          </div>
+          <div class="jf-tab-nav" id="jf-home-tab-nav">
+            <button class="jf-tab-btn is-active" data-tab="all">All Pieces</button>
+            <button class="jf-tab-btn" data-tab="sofas">Sofas</button>
+            <button class="jf-tab-btn" data-tab="dining">Dining</button>
+            <button class="jf-tab-btn" data-tab="beds">Beds</button>
+          </div>
+        </div>
+
+        <!-- Dynamic Product Cards (Populated from JF_DATA.products) -->
+        <div class="jf-products-grid" id="jf-home-products-grid">
+          <!-- Populated by renderHomeBestsellers() -->
+        </div>
+
+        <div style="text-align: center; margin-top: 48px;">
+          <a href="shop.html" class="jf-btn jf-btn-primary jf-btn-lg">
+            View Complete Collection (18+ Handcrafted Pieces) →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION D — MODERN LIVING INSPIRATION (WIDE INTERIOR PHOTOGRAPH) -->
+    <section class="jf-section" id="living-inspiration" style="padding-top: 10px; padding-bottom: 60px;">
+      <div class="jf-container">
+        <div class="jf-inspiration-banner">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2000&q=85" 
+               alt="Beautiful modern living room inspiration by Jaiswal Furniture" 
+               class="jf-inspiration-bg" 
+               loading="lazy">
+          <div class="jf-inspiration-overlay"></div>
+
+          <div class="jf-inspiration-content">
+            <span class="jf-hero-tag" style="background: rgba(223, 183, 108, 0.2); border-color: rgba(223, 183, 108, 0.4); color: var(--color-gold-400);">
+              Interior Styling Inspiration
+            </span>
+            <h2 style="font-size: clamp(2rem, 3.8vw, 2.9rem); color: #fff; margin-bottom: 16px; line-height: 1.2;">
+              Modern Living.<br>Timeless Soul.
+            </h2>
+            <p style="font-size: 1.05rem; color: rgba(253, 252, 249, 0.9); line-height: 1.65; max-width: 540px;">
+              A thoughtfully furnished space breathes calm into daily life. From sunlit morning living rooms to serene twilight bedrooms, our master craftsmen build furniture that frames your family's most enduring memories.
+            </p>
+
+            <div class="jf-inspiration-pills">
+              <span class="jf-inspiration-pill">✨ Architectural Symmetry</span>
+              <span class="jf-inspiration-pill">🪵 100% Kiln-Dried Hardwood</span>
+              <span class="jf-inspiration-pill">📐 Bespoke Custom Sizing</span>
+            </div>
+
+            <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+              <a href="shop.html" class="jf-btn jf-btn-gold jf-btn-lg">
+                Explore Collection
+              </a>
+              <a href="custom-furniture.html" class="jf-btn jf-btn-outline-white jf-btn-lg">
+                Custom Furniture Consultation
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION E — NEW ARRIVALS -->
+    <section class="jf-section" id="new-arrivals" style="background: var(--color-surface); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+      <div class="jf-container">
+        <div class="jf-section-header">
+          <div class="jf-section-title-wrap">
+            <span class="jf-section-eyebrow">Fresh From Our Mumbai Workshop</span>
+            <h2 class="jf-section-title">New Arrivals</h2>
+            <p class="jf-section-desc">Newly unveiled solid wood creations blending contemporary sculptural silhouettes with centuries-old joinery.</p>
+          </div>
+          <a href="shop.html" class="jf-btn jf-btn-outline">Browse All Releases →</a>
+        </div>
+
+        <!-- 4-Column Responsive Grid -->
+        <div class="jf-new-arrivals-grid" id="jf-home-new-arrivals-grid">
+          <!-- Populated by renderHomeNewArrivals() -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION F — WHY CHOOSE US (VERIFIED BENEFITS ONLY) -->
+    <section class="jf-section" id="why-choose-us">
+      <div class="jf-container">
+        <div class="jf-why-us">
+          <div style="text-align: center; max-width: 680px; margin: 0 auto;">
+            <span class="jf-section-eyebrow">The Jaiswal Benchmark</span>
+            <h2 class="jf-section-title">Why Indian Homes Trust Us Since 1989</h2>
+            <p class="jf-section-desc">We do not sell mass-produced veneer boards. Every single piece is shaped by master artisans in solid kiln-dried timber.</p>
+          </div>
+
+          <div class="jf-why-grid">
+            <div class="jf-why-card">
+              <div class="jf-why-icon-wrap">🪵</div>
+              <h3 class="jf-why-title">100% Solid Seasoned Wood</h3>
+              <p class="jf-why-desc">Certified Grade-A CP Teak, Sheesham & American Walnut kiln-dried for 90 days. Zero warping, shrinking, or sagging.</p>
+            </div>
+
+            <div class="jf-why-card">
+              <div class="jf-why-icon-wrap">🔨</div>
+              <h3 class="jf-why-title">Master Interlocking Joinery</h3>
+              <p class="jf-why-desc">Centuries-old mortise-and-tenon & dovetail joinery. Unlike screws and glue that loosen, our joints tighten with age.</p>
+            </div>
+
+            <div class="jf-why-card">
+              <div class="jf-why-icon-wrap">📐</div>
+              <h3 class="jf-why-title">Bespoke Custom Designs</h3>
+              <p class="jf-why-desc">Bring us a blueprint, Pinterest photograph, or floor plan. Our in-house designers tailor every dimension and finish to your space.</p>
+            </div>
+
+            <div class="jf-why-card">
+              <div class="jf-why-icon-wrap">🚚</div>
+              <h3 class="jf-why-title">White-Glove Pan-India Delivery</h3>
+              <p class="jf-why-desc">Trained company technicians deliver, assemble, and position your furniture with zero hassle. Fully transit insured.</p>
+            </div>
+
+            <div class="jf-why-card">
+              <div class="jf-why-icon-wrap">🛡️</div>
+              <h3 class="jf-why-title">10-Year Replacement Warranty</h3>
+              <p class="jf-why-desc">Guaranteed protection against borer, termite, and structural joint defects with comprehensive replacement assurance.</p>
+            </div>
+
+            <div class="jf-why-card">
+              <div class="jf-why-icon-wrap">🏛️</div>
+              <h3 class="jf-why-title">35+ Years Direct Heritage</h3>
+              <p class="jf-why-desc">Direct master workshop in Lower Parel, Mumbai founded in 1989. Generational pricing with zero middleman distributor markups.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION G — CUSTOMER REVIEWS (GENUINE TESTIMONIALS ONLY) -->
+    <section class="jf-section" id="customer-reviews" style="background: var(--color-cream-200); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+      <div class="jf-container">
+        <div class="jf-section-header" style="justify-content: center; text-align: center;">
+          <div class="jf-section-title-wrap">
+            <span class="jf-section-eyebrow">Client Love</span>
+            <h2 class="jf-section-title">Generations of Delighted Homeowners</h2>
+            <p class="jf-section-desc">Over 15,000 homes across Mumbai, Bangalore, Delhi NCR, and nationwide cherish their Jaiswal centerpieces.</p>
+          </div>
+        </div>
+
+        <div class="jf-testimonials-wrapper">
+          <div class="jf-testimonials-grid" id="jf-testimonials-container">
+            <!-- Dynamically populated from JF_DATA.testimonials -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION H — NEWSLETTER & FOOTER -->
+    <section class="jf-section">
+      <div class="jf-container">
+        <div class="jf-newsletter-banner">
+          <div class="jf-newsletter-inner">
+            <span class="jf-hero-tag" style="background: rgba(255,255,255,0.15); border-color: rgba(255,255,255,0.3); color: #fff;">
+              VIP Collectors Circle
+            </span>
+            <h2 class="jf-newsletter-title">Bring Crafted Comfort Home.</h2>
+            <p class="jf-newsletter-sub">
+              Subscribe for private showcase invitations, wood care guides, and receive an instant <strong>10% off</strong> with code <strong>JAISWAL10</strong>.
+            </p>
+            <form class="jf-newsletter-form-inline js-newsletter-form">
+              <input type="email" placeholder="Enter your email address..." required aria-label="Email address for newsletter">
+              <button type="submit" class="jf-btn jf-btn-gold">Join Circle</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="jf-footer">
+    <div class="jf-container">
+      <div class="jf-footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div>
+          <div class="jf-brand">
+            <div class="jf-brand-emblem" style="background: var(--color-gold-500); color: var(--color-walnut-950);">J</div>
+            <div class="jf-brand-text">
+              <span class="jf-brand-title" style="color: #fff;">Jaiswal Furniture</span>
+              <span class="jf-brand-tagline" style="color: var(--color-gold-400);">Est. 1989 • Mumbai</span>
+            </div>
+          </div>
+          <p class="jf-footer-brand-desc">
+            Handcrafting generational solid wood furniture with heirloom integrity. Grade-A seasoned Teakwood, Indian Sheesham, and American Walnut tailored for discerning residences.
+          </p>
+          <div class="jf-footer-socials">
+            <a href="https://instagram.com" class="jf-social-btn" aria-label="Instagram" target="_blank" rel="noopener">📸</a>
+            <a href="https://facebook.com" class="jf-social-btn" aria-label="Facebook" target="_blank" rel="noopener">📘</a>
+            <a href="https://pinterest.com" class="jf-social-btn" aria-label="Pinterest" target="_blank" rel="noopener">📌</a>
+            <a href="https://youtube.com" class="jf-social-btn" aria-label="YouTube" target="_blank" rel="noopener">🎬</a>
+          </div>
+        </div>
+
+        <!-- Col 2: Collections Links -->
+        <div>
+          <h4 class="jf-footer-col-title">Collections</h4>
+          <ul class="jf-footer-links">
+            <li><a href="shop.html?category=sofas" class="jf-footer-link">Living Room & Sofas</a></li>
+            <li><a href="shop.html?category=beds" class="jf-footer-link">Hydraulic Storage Beds</a></li>
+            <li><a href="shop.html?category=dining" class="jf-footer-link">Solid Teak Dining Sets</a></li>
+            <li><a href="shop.html?category=office" class="jf-footer-link">Executive Workstations</a></li>
+            <li><a href="shop.html?category=wardrobes" class="jf-footer-link">Artisanal Wardrobes</a></li>
+            <li><a href="shop.html?category=outdoor" class="jf-footer-link">Outdoor & Balcony</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services & Concierge -->
+        <div>
+          <h4 class="jf-footer-col-title">Concierge</h4>
+          <ul class="jf-footer-links">
+            <li><a href="custom-furniture.html" class="jf-footer-link">Custom Made-to-Order</a></li>
+            <li><a href="gallery.html" class="jf-footer-link">Completed Projects Gallery</a></li>
+            <li><a href="about.html" class="jf-footer-link">Our 35-Year Heritage</a></li>
+            <li><a href="contact.html" class="jf-footer-link">Experience Centres</a></li>
+            <li><a href="cart.html" class="jf-footer-link">Cart & Checkout</a></li>
+            <li><a href="contact.html#faq" class="jf-footer-link">Warranty & Wood Care</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Experience Centre Details -->
+        <div>
+          <h4 class="jf-footer-col-title">Flagship Showroom</h4>
+          <div class="jf-footer-contact-list">
+            <div class="jf-footer-contact-item">
+              <span class="jf-footer-contact-icon">📍</span>
+              <span>Plot 42, Jaiswal Heritage Lane, Lower Parel West, Mumbai 400013</span>
+            </div>
+            <div class="jf-footer-contact-item">
+              <span class="jf-footer-contact-icon">📞</span>
+              <span>+91 98201 54890 / +91 22 2493 8811</span>
+            </div>
+            <div class="jf-footer-contact-item">
+              <span class="jf-footer-contact-icon">✉️</span>
+              <span>concierge@jaiswalfurniture.com</span>
+            </div>
+            <div class="jf-footer-contact-item">
+              <span class="jf-footer-contact-icon">⏰</span>
+              <span>Mon – Sun: 10:30 AM to 8:30 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="jf-footer-bottom">
+        <div>
+          &copy; 1989–2026 Jaiswal Furniture Ltd. All Rights Reserved. Crafted with pride in India.
+        </div>
+        <div class="jf-payment-chips">
+          <span class="jf-pay-chip">UPI</span>
+          <span class="jf-pay-chip">RuPay</span>
+          <span class="jf-pay-chip">Visa</span>
+          <span class="jf-pay-chip">Mastercard</span>
+          <span class="jf-pay-chip">NetBanking</span>
+          <span class="jf-pay-chip">Cash on Delivery</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Home Page specific controller
+    document.addEventListener("DOMContentLoaded", () => {
+      renderHomeBestsellers("all");
+      renderHomeNewArrivals();
+      renderHomeTestimonials();
+      initHomeTabFilter();
+    });
+
+    function renderHomeBestsellers(category) {
+      const grid = document.getElementById("jf-home-products-grid");
+      if (!grid || !window.JF_DATA) return;
+
+      let items = window.JF_DATA.products;
+      if (category !== "all") {
+        items = items.filter(p => p.category === category);
+      }
+      items = items.slice(0, 8); // Display 8 showcase items
+
+      grid.innerHTML = items.map(p => {
+        const isWish = window.JF_Cart ? window.JF_Cart.isInWishlist(p.id) : false;
+        return `
+          <article class="jf-product-card">
+            <div class="jf-product-media">
+              <img src="${p.image}" alt="${p.name}" loading="lazy" class="jf-product-img">
+              <span class="jf-badge jf-product-badge-float">${p.badge || p.woodType}</span>
+              <button class="jf-wishlist-toggle ${isWish ? 'is-active' : ''}" onclick="window.JF_Cart.toggleWishlist('${p.id}'); this.classList.toggle('is-active');" title="Wishlist">
+                ♥
+              </button>
+              <button class="jf-product-quick-view" onclick="openQuickView('${p.id}')">
+                Quick Preview
+              </button>
+            </div>
+            <div class="jf-product-body">
+              <span class="jf-product-category">${p.categoryLabel}</span>
+              <h3 class="jf-product-title">
+                <a href="product-detail.html?id=${p.id}">${p.name}</a>
+              </h3>
+              <span class="jf-product-wood">${p.woodType} • ★ ${p.rating}</span>
+              <div class="jf-product-foot">
+                <div class="jf-pricing-wrap">
+                  <span class="jf-price-current">${JF_Cart.formatINR(p.price)}</span>
+                  <span class="jf-price-original">${JF_Cart.formatINR(p.originalPrice)}</span>
+                </div>
+                <button class="jf-add-cart-btn" onclick="JF_Cart.addItem('${p.id}', 1)" title="Add to Cart" aria-label="Add ${p.name} to Cart">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M5 12h14"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function renderHomeNewArrivals() {
+      const grid = document.getElementById("jf-home-new-arrivals-grid");
+      if (!grid || !window.JF_DATA) return;
+
+      const newArrivalIds = [
+        "elysian-sculptural-coffee-table",
+        "zenith-slatted-tv-credenza",
+        "devbhoomi-handcrafted-mandir",
+        "roopam-arched-dressing-mirror"
+      ];
+      
+      const items = newArrivalIds
+        .map(id => window.JF_DATA.products.find(p => p.id === id))
+        .filter(Boolean);
+
+      grid.innerHTML = items.map(p => {
+        const isWish = window.JF_Cart ? window.JF_Cart.isInWishlist(p.id) : false;
+        return `
+          <article class="jf-product-card">
+            <div class="jf-product-media">
+              <img src="${p.image}" alt="${p.name}" loading="lazy" class="jf-product-img">
+              <span class="jf-badge jf-product-badge-float">${p.badge || "New Arrival"}</span>
+              <button class="jf-wishlist-toggle ${isWish ? 'is-active' : ''}" onclick="window.JF_Cart.toggleWishlist('${p.id}'); this.classList.toggle('is-active');" title="Wishlist">
+                ♥
+              </button>
+              <button class="jf-product-quick-view" onclick="openQuickView('${p.id}')">
+                Quick Preview
+              </button>
+            </div>
+            <div class="jf-product-body">
+              <span class="jf-product-category">${p.categoryLabel}</span>
+              <h3 class="jf-product-title">
+                <a href="product-detail.html?id=${p.id}">${p.name}</a>
+              </h3>
+              <span class="jf-product-wood">${p.woodType} • ★ ${p.rating}</span>
+              <div class="jf-product-foot">
+                <div class="jf-pricing-wrap">
+                  <span class="jf-price-current">${JF_Cart.formatINR(p.price)}</span>
+                  <span class="jf-price-original">${JF_Cart.formatINR(p.originalPrice)}</span>
+                </div>
+                <button class="jf-add-cart-btn" onclick="JF_Cart.addItem('${p.id}', 1)" title="Add to Cart" aria-label="Add ${p.name} to Cart">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M5 12h14"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function renderHomeTestimonials() {
+      const container = document.getElementById("jf-testimonials-container");
+      if (!container || !window.JF_DATA) return;
+
+      container.innerHTML = window.JF_DATA.testimonials.map(t => `
+        <div class="jf-testimonial-card">
+          <div>
+            <div class="jf-testimonial-stars">★★★★★</div>
+            <p class="jf-testimonial-text">"${t.comment}"</p>
+          </div>
+          <div class="jf-testimonial-author">
+            <img src="${t.avatar}" alt="${t.name}" class="jf-testimonial-avatar" loading="lazy">
+            <div>
+              <div class="jf-author-name">${t.name}</div>
+              <div class="jf-author-location">${t.location}</div>
+              <div class="jf-author-project">${t.project}</div>
+            </div>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function initHomeTabFilter() {
+      const nav = document.getElementById("jf-home-tab-nav");
+      if (!nav) return;
+
+      nav.querySelectorAll(".jf-tab-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          nav.querySelectorAll(".jf-tab-btn").forEach(b => b.classList.remove("is-active"));
+          btn.classList.add("is-active");
+          const tab = btn.getAttribute("data-tab");
+          renderHomeBestsellers(tab);
+        });
+      });
+    }
+  </script>
+</body>
+</html>

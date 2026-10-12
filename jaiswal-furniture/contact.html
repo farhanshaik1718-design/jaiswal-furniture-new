@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Experience Centres | Jaiswal Furniture</title>
+  <meta name="description" content="Visit our flagship solid wood showroom in Lower Parel, Mumbai. Book a 1-on-1 interior consultation, chat via WhatsApp, or reach our concierge.">
+  <meta name="keywords" content="furniture showroom lower parel, jaiswal furniture contact, interior consultation mumbai, teak furniture store">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .jf-contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 50px;
+      margin: 50px 0 80px;
+      align-items: flex-start;
+    }
+    .jf-info-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      box-shadow: var(--shadow-sm);
+    }
+    .jf-contact-method {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 24px;
+      align-items: flex-start;
+    }
+    .jf-method-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-md);
+      background: var(--color-cream-200);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      color: var(--color-walnut-800);
+      flex-shrink: 0;
+    }
+    .jf-map-box {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      margin-top: 24px;
+      border: 1px solid var(--color-border);
+      position: relative;
+      height: 220px;
+      background: #e5e3df;
+    }
+    /* FAQ Accordion */
+    .jf-faq-item {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      margin-bottom: 14px;
+      overflow: hidden;
+    }
+    .jf-faq-btn {
+      width: 100%;
+      text-align: left;
+      padding: 18px 22px;
+      font-size: 1.05rem;
+      font-family: var(--font-serif);
+      font-weight: 600;
+      color: var(--color-walnut-900);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .jf-faq-content {
+      padding: 0 22px 20px;
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+      line-height: 1.7;
+      display: none;
+    }
+    .jf-faq-item.is-open .jf-faq-content {
+      display: block;
+    }
+    @media (max-width: 992px) {
+      .jf-contact-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="jf-topbar">
+    <div class="jf-container jf-topbar-inner">
+      <div class="jf-topbar-msg">
+        <span class="jf-topbar-pill">VISIT US</span>
+        Showroom Open 7 Days • Complimentary Valet Parking Available
+      </div>
+      <div class="jf-topbar-links">
+        <a href="custom-furniture.html" class="jf-topbar-link">📐 Custom Furniture Consultation</a>
+        <a href="tel:+919820154890" class="jf-topbar-link">📞 +91 98201 54890</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="jf-header">
+    <div class="jf-container jf-navbar">
+      <a href="index.html" class="jf-brand" aria-label="Jaiswal Furniture Home">
+        <div class="jf-brand-emblem">J</div>
+        <div class="jf-brand-text">
+          <span class="jf-brand-title">Jaiswal Furniture</span>
+          <span class="jf-brand-tagline">Crafted Comfort for Every Home</span>
+        </div>
+      </a>
+
+      <nav class="jf-nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="jf-nav-link">Home</a>
+        <a href="shop.html" class="jf-nav-link">Shop</a>
+        <a href="custom-furniture.html" class="jf-nav-link">Custom Furniture</a>
+        <a href="gallery.html" class="jf-nav-link">Gallery</a>
+        <a href="about.html" class="jf-nav-link">About Us</a>
+        <a href="contact.html" class="jf-nav-link is-current">Contact</a>
+      </nav>
+
+      <div class="jf-header-actions">
+        <button class="jf-action-btn js-open-search" aria-label="Search catalog" title="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <a href="shop.html" class="jf-action-btn" aria-label="Wishlist" title="Wishlist">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="jf-badge-count js-wishlist-count" style="display: none;">0</span>
+        </a>
+
+        <button class="jf-action-btn js-open-cart" aria-label="Open Cart" title="Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-2z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="jf-badge-count js-cart-count" style="display: none;">0</span>
+        </button>
+
+        <button class="jf-mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="jf-mobile-overlay"></div>
+  <aside class="jf-mobile-nav" aria-label="Mobile Navigation">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="jf-brand">
+        <div class="jf-brand-emblem">J</div>
+        <span class="jf-brand-title" style="font-size: 1.15rem;">Jaiswal</span>
+      </div>
+      <button class="jf-icon-btn" onclick="document.querySelector('.jf-mobile-toggle').click();">&times;</button>
+    </div>
+    <nav class="jf-mobile-menu">
+      <a href="index.html" class="jf-mobile-nav-link">Home</a>
+      <a href="shop.html" class="jf-mobile-nav-link">Shop Catalog</a>
+      <a href="custom-furniture.html" class="jf-mobile-nav-link">Custom Furniture</a>
+      <a href="gallery.html" class="jf-mobile-nav-link">Our Work Gallery</a>
+      <a href="about.html" class="jf-mobile-nav-link">About Us</a>
+      <a href="contact.html" class="jf-mobile-nav-link is-current">Contact & Showrooms</a>
+      <a href="cart.html" class="jf-mobile-nav-link">Shopping Cart & Checkout</a>
+    </nav>
+  </aside>
+
+  <main id="main-content">
+    <div class="jf-container" style="padding-top: 40px;">
+      <div style="text-align: center; max-width: 680px; margin: 0 auto;">
+        <span class="jf-section-eyebrow">Connect With Us</span>
+        <h1 style="font-size: clamp(2.2rem, 3.8vw, 3rem); color: var(--color-walnut-900); margin-bottom: 12px;">
+          Experience Centres & Concierge
+        </h1>
+        <p style="color: var(--color-text-muted); font-size: 1.05rem; line-height: 1.6;">
+          Whether you want to inspect live timber samples at our Lower Parel flagship, discuss a bespoke penthouse commission, or track an existing order, we are at your service.
+        </p>
+      </div>
+
+      <div class="jf-contact-layout">
+        <!-- Left: Showroom Info & Map -->
+        <div class="jf-info-card">
+          <h3 style="font-size: 1.4rem; font-family: var(--font-serif); margin-bottom: 24px;">Flagship Experience Centre</h3>
+
+          <div class="jf-contact-method">
+            <div class="jf-method-icon">📍</div>
+            <div>
+              <strong style="font-size: 0.95rem; display: block;">Mumbai Flagship Showroom & Atelier</strong>
+              <span style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.5; display: block; margin-top: 2px;">
+                Plot 42, Jaiswal Heritage Lane, Lower Parel West, Mumbai 400013<br>
+                (Opposite High Street Phoenix)
+              </span>
+            </div>
+          </div>
+
+          <div class="jf-contact-method">
+            <div class="jf-method-icon">📞</div>
+            <div>
+              <strong style="font-size: 0.95rem; display: block;">Concierge Desk</strong>
+              <a href="tel:+919820154890" style="font-size: 0.95rem; color: var(--color-gold-600); font-weight: 600; display: block; margin-top: 2px;">+91 98201 54890</a>
+              <span style="font-size: 0.8rem; color: var(--color-text-muted);">Landline: +91 22 2493 8811</span>
+            </div>
+          </div>
+
+          <div class="jf-contact-method">
+            <div class="jf-method-icon">✉️</div>
+            <div>
+              <strong style="font-size: 0.95rem; display: block;">Email Inquiries</strong>
+              <a href="mailto:concierge@jaiswalfurniture.com" style="font-size: 0.9rem; color: var(--color-walnut-900);">concierge@jaiswalfurniture.com</a>
+            </div>
+          </div>
+
+          <div class="jf-contact-method">
+            <div class="jf-method-icon">⏰</div>
+            <div>
+              <strong style="font-size: 0.95rem; display: block;">Operating Hours</strong>
+              <span style="font-size: 0.85rem; color: var(--color-text-muted);">Monday through Sunday: 10:30 AM to 8:30 PM (Open all 7 days)</span>
+            </div>
+          </div>
+
+          <!-- Direct WhatsApp Button -->
+          <a href="https://wa.me/919820154890?text=Hello%20Jaiswal%20Furniture!%20I%20would%20like%20to%20plan%20a%20showroom%20visit." target="_blank" rel="noopener noreferrer" class="jf-btn jf-btn-block" style="background: #25D366; color: #fff; margin-top: 8px;">
+            💬 Open Direct WhatsApp Chat
+          </a>
+
+          <!-- Interactive Map Container -->
+          <div class="jf-map-box">
+            <iframe 
+              title="Jaiswal Furniture Showroom Location"
+              src="https://maps.google.com/maps?q=Lower%20Parel%2C%20Mumbai&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Right: Consultation Booking Form -->
+        <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 36px; box-shadow: var(--shadow-sm);">
+          <h3 style="font-size: 1.4rem; font-family: var(--font-serif); margin-bottom: 6px;">Book a Private Consultation</h3>
+          <p style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 24px;">
+            Reserve a 1-on-1 walkthrough with our senior furniture architect to discuss timber finishes, room measurements, and live CAD drawings.
+          </p>
+
+          <form id="jf-contact-form">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 18px;">
+              <div class="jf-form-group" style="margin-bottom: 0;">
+                <label class="jf-form-label" for="jf-contact-name">Your Full Name *</label>
+                <input type="text" id="jf-contact-name" class="jf-form-input" placeholder="e.g. Anand Mahindra" required>
+              </div>
+
+              <div class="jf-form-group" style="margin-bottom: 0;">
+                <label class="jf-form-label" for="jf-contact-phone">Mobile / WhatsApp *</label>
+                <input type="tel" id="jf-contact-phone" class="jf-form-input" placeholder="+91 98200 00000" required>
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 18px;">
+              <div class="jf-form-group" style="margin-bottom: 0;">
+                <label class="jf-form-label" for="jf-contact-email">Email Address</label>
+                <input type="email" id="jf-contact-email" class="jf-form-input" placeholder="name@domain.com">
+              </div>
+
+              <div class="jf-form-group" style="margin-bottom: 0;">
+                <label class="jf-form-label" for="jf-contact-service">Inquiry Purpose *</label>
+                <select id="jf-contact-service" class="jf-form-select">
+                  <option value="showroom_visit">Showroom Visit & Wood Inspection</option>
+                  <option value="custom_project">Full Home Custom Furniture Project</option>
+                  <option value="architect">Architect / Interior Designer Tie-up</option>
+                  <option value="existing_order">Existing Order Status & Delivery</option>
+                </select>
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 18px;">
+              <div class="jf-form-group" style="margin-bottom: 0;">
+                <label class="jf-form-label" for="jf-contact-date">Preferred Date</label>
+                <input type="date" id="jf-contact-date" class="jf-form-input">
+              </div>
+
+              <div class="jf-form-group" style="margin-bottom: 0;">
+                <label class="jf-form-label" for="jf-contact-time">Preferred Slot</label>
+                <select id="jf-contact-time" class="jf-form-select">
+                  <option>Morning (11:00 AM – 1:00 PM)</option>
+                  <option selected>Afternoon (2:00 PM – 5:00 PM)</option>
+                  <option>Evening (5:00 PM – 8:00 PM)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="jf-form-group">
+              <label class="jf-form-label" for="jf-contact-message">Requirements & Floor Plan Details</label>
+              <textarea id="jf-contact-message" class="jf-form-textarea" rows="4" placeholder="Tell us which room you wish to furnish (Living room, dining, master bed, or custom mandir)..."></textarea>
+            </div>
+
+            <button type="submit" class="jf-btn jf-btn-primary jf-btn-lg jf-btn-block">
+              Confirm Showroom Slot & Send Message →
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- FAQ Section -->
+      <section id="faq" style="margin: 60px 0 80px;">
+        <div style="text-align: center; max-width: 600px; margin: 0 auto 36px;">
+          <span class="jf-section-eyebrow">Help & Clarity</span>
+          <h2 class="jf-section-title">Frequently Asked Questions</h2>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto;">
+          <div class="jf-faq-item is-open">
+            <button class="jf-faq-btn" onclick="this.parentElement.classList.toggle('is-open')">
+              <span>What is the lead time for custom made-to-order furniture?</span>
+              <span>▾</span>
+            </button>
+            <div class="jf-faq-content">
+              Standard custom furniture orders take between 18 to 25 business days from 3D blueprint sign-off. Because we season and kiln-dry our hardwood to exact moisture standards, we never rush the curing and oiling processes.
+            </div>
+          </div>
+
+          <div class="jf-faq-item">
+            <button class="jf-faq-btn" onclick="this.parentElement.classList.toggle('is-open')">
+              <span>How does your 10-Year Comprehensive Warranty work?</span>
+              <span>▾</span>
+            </button>
+            <div class="jf-faq-content">
+              Our 10-year warranty protects your purchase against any internal borer or termite attack, warping, and joint delamination. In the rare event of a structural defect, our company technicians inspect and repair or replace the unit free of charge.
+            </div>
+          </div>
+
+          <div class="jf-faq-item">
+            <button class="jf-faq-btn" onclick="this.parentElement.classList.toggle('is-open')">
+              <span>Is delivery and assembly included for outstation cities?</span>
+              <span>▾</span>
+            </button>
+            <div class="jf-faq-content">
+              Yes! For all orders above ₹40,000, white-glove doorstep delivery and carpenter assembly is completely free across all tier-1 and tier-2 Indian pin codes. Our logistics team handles transit insurance and full packaging disposal.
+            </div>
+          </div>
+
+          <div class="jf-faq-item">
+            <button class="jf-faq-btn" onclick="this.parentElement.classList.toggle('is-open')">
+              <span>Can I customize the wood stain or fabric color?</span>
+              <span>▾</span>
+            </button>
+            <div class="jf-faq-content">
+              Absolutely. We provide timber samples and fabric swatch books (bouclé, velvet, pure linen, and vegan leatherette) in over 50 shades. You can match the exact stain to your existing home flooring or cabinetry.
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="jf-footer">
+    <div class="jf-container">
+      <div class="jf-footer-grid">
+        <div>
+          <div class="jf-brand">
+            <div class="jf-brand-emblem" style="background: var(--color-gold-500); color: var(--color-walnut-950);">J</div>
+            <div class="jf-brand-text">
+              <span class="jf-brand-title" style="color: #fff;">Jaiswal Furniture</span>
+              <span class="jf-brand-tagline" style="color: var(--color-gold-400);">Est. 1989 • Mumbai</span>
+            </div>
+          </div>
+          <p class="jf-footer-brand-desc">
+            Handcrafting generational solid wood furniture with heirloom integrity. Grade-A seasoned Teakwood, Indian Sheesham, and American Walnut tailored for discerning residences.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="jf-footer-col-title">Navigation</h4>
+          <ul class="jf-footer-links">
+            <li><a href="index.html" class="jf-footer-link">Home</a></li>
+            <li><a href="shop.html" class="jf-footer-link">Catalog</a></li>
+            <li><a href="custom-furniture.html" class="jf-footer-link">Custom Made-to-Order</a></li>
+            <li><a href="gallery.html" class="jf-footer-link">Portfolio Gallery</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="jf-footer-col-title">Flagship Showroom</h4>
+          <div class="jf-footer-contact-list">
+            <div class="jf-footer-contact-item">
+              <span class="jf-footer-contact-icon">📍</span>
+              <span>Plot 42, Jaiswal Heritage Lane, Lower Parel West, Mumbai 400013</span>
+            </div>
+            <div class="jf-footer-contact-item">
+              <span class="jf-footer-contact-icon">📞</span>
+              <span>+91 98201 54890</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="jf-footer-col-title">Business Hours</h4>
+          <p style="font-size: 0.85rem; color: rgba(255,255,255,0.7); line-height: 1.6;">
+            Monday through Sunday<br>
+            10:30 AM to 8:30 PM IST<br>
+            Valet parking available on site.
+          </p>
+        </div>
+      </div>
+
+      <div class="jf-footer-bottom">
+        <div>&copy; 1989–2026 Jaiswal Furniture Ltd. All Rights Reserved.</div>
+        <div class="jf-payment-chips">
+          <span class="jf-pay-chip">UPI</span>
+          <span class="jf-pay-chip">RuPay</span>
+          <span class="jf-pay-chip">Visa</span>
+          <span class="jf-pay-chip">Mastercard</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const form = document.getElementById("jf-contact-form");
+      if (form) {
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const name = document.getElementById("jf-contact-name").value.trim();
+          const phone = document.getElementById("jf-contact-phone").value.trim();
+          
+          if (window.JF_Cart) {
+            window.JF_Cart.showToast(
+              "Consultation Confirmed! 🏛️",
+              `Thank you ${name}. Our concierge will WhatsApp you at ${phone} to confirm your showroom slot.`,
+              "success"
+            );
+          }
+          form.reset();
+        });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,392 @@
+/* ==========================================================================
+   JAISWAL FURNITURE — PRODUCT DETAIL PAGE STYLES
+   ========================================================================== */
+
+.jf-product-detail-section {
+  padding: 40px 0 80px;
+}
+
+.jf-pdp-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 50px;
+  align-items: flex-start;
+  margin-bottom: 70px;
+}
+
+/* --- 1. GALLERY --- */
+.jf-pdp-gallery {
+  position: sticky;
+  top: 110px;
+}
+
+.jf-pdp-main-wrap {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: #eee;
+  padding-top: 80%; /* 5:4 aspect ratio */
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.jf-pdp-main-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.jf-pdp-main-img:hover {
+  transform: scale(1.05);
+}
+
+.jf-pdp-thumbs {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.jf-pdp-thumb-btn {
+  width: 84px;
+  height: 84px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 2px solid transparent;
+  flex-shrink: 0;
+  background: #eae4dc;
+  transition: all var(--transition-fast);
+}
+
+.jf-pdp-thumb-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.jf-pdp-thumb-btn.is-active,
+.jf-pdp-thumb-btn:hover {
+  border-color: var(--color-gold-500);
+  transform: translateY(-2px);
+}
+
+/* --- 2. PRODUCT DETAILS & OPTIONS --- */
+.jf-pdp-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.jf-pdp-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.jf-pdp-title {
+  font-size: clamp(2rem, 3.2vw, 2.6rem);
+  color: var(--color-walnut-900);
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.jf-pdp-rating-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.875rem;
+  margin-bottom: 20px;
+}
+
+.jf-pdp-stars {
+  color: var(--color-gold-500);
+  font-weight: 700;
+}
+
+.jf-pdp-sku {
+  color: var(--color-text-light);
+  font-size: 0.8rem;
+  border-left: 1px solid var(--color-border);
+  padding-left: 10px;
+}
+
+.jf-pdp-pricing-card {
+  background: var(--color-cream-200);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  border: 1px solid var(--color-border);
+}
+
+.jf-pdp-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-walnut-900);
+}
+
+.jf-pdp-orig-price {
+  font-size: 1.1rem;
+  text-decoration: line-through;
+  color: var(--color-text-light);
+}
+
+.jf-pdp-save-pill {
+  background: #FEF3C7;
+  color: #92400E;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+}
+
+.jf-pdp-lead {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+/* Swatch Sections */
+.jf-option-box {
+  margin-bottom: 22px;
+}
+
+.jf-option-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-walnut-900);
+  margin-bottom: 10px;
+}
+
+.jf-option-selected-name {
+  color: var(--color-gold-600);
+  font-weight: 700;
+}
+
+.jf-swatches-list {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.jf-swatch-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1.5px solid var(--color-border);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  background: #fff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+}
+
+.jf-swatch-item:hover,
+.jf-swatch-item.is-selected {
+  border-color: var(--color-walnut-800);
+  background: var(--color-cream-100);
+}
+
+.jf-swatch-item.is-selected {
+  box-shadow: 0 0 0 1px var(--color-walnut-800);
+}
+
+.jf-swatch-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(0,0,0,0.15);
+}
+
+/* Dimensions Summary Box */
+.jf-dimension-summary {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.jf-dimension-icon {
+  font-size: 1.4rem;
+}
+
+.jf-dimension-text {
+  font-size: 0.875rem;
+  color: var(--color-walnut-900);
+}
+
+/* PDP Quantity & Purchase Actions */
+.jf-pdp-actions-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.jf-pdp-qty-wrap {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-full);
+  background: #fff;
+  height: 52px;
+  padding: 0 4px;
+}
+
+.jf-pdp-qty-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-walnut-900);
+}
+
+.jf-pdp-qty-input {
+  width: 44px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.jf-pdp-add-btn {
+  flex-grow: 1;
+  height: 52px;
+}
+
+.jf-pdp-whatsapp-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  background: #25D366;
+  color: #fff;
+  border-radius: var(--radius-full);
+  padding: 12px;
+  font-weight: 600;
+  font-size: 0.925rem;
+  margin-bottom: 24px;
+  transition: background var(--transition-fast);
+}
+
+.jf-pdp-whatsapp-btn:hover {
+  background: #1eb956;
+}
+
+/* Value Props checklist */
+.jf-pdp-props {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 20px 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.jf-pdp-prop-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-walnut-900);
+}
+
+/* --- 3. TABBED SECTION (Specs, Care, Delivery) --- */
+.jf-tabs-container {
+  margin-top: 60px;
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+}
+
+.jf-tab-header {
+  display: flex;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-cream-100);
+}
+
+.jf-pdp-tab-btn {
+  padding: 18px 28px;
+  font-size: 0.95rem;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  color: var(--color-walnut-800);
+  border-bottom: 3px solid transparent;
+  transition: all var(--transition-fast);
+}
+
+.jf-pdp-tab-btn.is-active {
+  color: var(--color-walnut-950);
+  border-bottom-color: var(--color-gold-500);
+  background: #fff;
+}
+
+.jf-tab-panel {
+  padding: 36px 40px;
+  display: none;
+}
+
+.jf-tab-panel.is-active {
+  display: block;
+}
+
+/* Specs Table */
+.jf-specs-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.jf-specs-table tr {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.jf-specs-table th {
+  text-align: left;
+  padding: 14px 16px;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  width: 35%;
+  font-weight: 600;
+  background: var(--color-cream-100);
+}
+
+.jf-specs-table td {
+  padding: 14px 16px;
+  font-size: 0.875rem;
+  color: var(--color-walnut-900);
+}
+
+@media (max-width: 992px) {
+  .jf-pdp-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .jf-pdp-gallery {
+    position: static;
+  }
+  .jf-tab-panel {
+    padding: 24px 20px;
+  }
+}

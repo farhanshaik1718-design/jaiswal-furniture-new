@@ -1,0 +1,278 @@
+/* ==========================================================================
+   JAISWAL FURNITURE — SHOP & CATALOG STYLES
+   ========================================================================== */
+
+.jf-shop-header {
+  padding: 40px 0 30px;
+  background: var(--color-cream-200);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 40px;
+}
+
+.jf-shop-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  margin-bottom: 12px;
+}
+
+.jf-shop-title {
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  color: var(--color-walnut-900);
+}
+
+.jf-shop-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 36px;
+  align-items: flex-start;
+  padding-bottom: 80px;
+}
+
+/* --- SIDEBAR FILTERS --- */
+.jf-filter-sidebar {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  padding: 26px 22px;
+  position: sticky;
+  top: 100px;
+}
+
+.jf-filter-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 20px;
+}
+
+.jf-filter-title {
+  font-size: 1.15rem;
+  font-family: var(--font-serif);
+}
+
+.jf-reset-filters-btn {
+  font-size: 0.8rem;
+  color: var(--color-gold-600);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.jf-filter-group {
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.jf-filter-group:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.jf-filter-heading {
+  font-size: 0.925rem;
+  font-weight: 700;
+  color: var(--color-walnut-900);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.jf-filter-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.jf-checkbox-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: var(--color-text-main);
+  cursor: pointer;
+  user-select: none;
+}
+
+.jf-checkbox-custom {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.jf-checkbox-label input[type="checkbox"],
+.jf-checkbox-label input[type="radio"] {
+  accent-color: var(--color-walnut-800);
+  width: 16px;
+  height: 16px;
+}
+
+.jf-filter-count {
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+}
+
+/* Price Range Slider */
+.jf-price-range-control {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.jf-price-slider {
+  width: 100%;
+  accent-color: var(--color-walnut-800);
+}
+
+.jf-price-labels {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-walnut-900);
+}
+
+/* --- TOOLBAR ABOVE GRID --- */
+.jf-shop-toolbar {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.jf-shop-results-count {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.jf-shop-results-count strong {
+  color: var(--color-walnut-900);
+}
+
+.jf-toolbar-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.jf-sort-select {
+  border: 1px solid var(--color-border);
+  padding: 8px 14px;
+  border-radius: var(--radius-full);
+  background: var(--color-cream-100);
+  font-size: 0.85rem;
+  color: var(--color-walnut-900);
+  outline: none;
+  font-weight: 500;
+}
+
+.jf-view-toggles {
+  display: flex;
+  gap: 6px;
+}
+
+.jf-view-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  background: var(--color-cream-100);
+  border: 1px solid var(--color-border);
+}
+
+.jf-view-btn.is-active {
+  background: var(--color-walnut-800);
+  color: #fff;
+}
+
+/* Active filter chips bar */
+.jf-active-chips {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.jf-filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--color-gold-light);
+  color: var(--color-walnut-900);
+  border: 1px solid rgba(197, 160, 89, 0.3);
+  font-size: 0.775rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+
+.jf-chip-remove {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* Empty Catalog State */
+.jf-shop-empty {
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: 1px dashed var(--color-border);
+}
+
+.jf-shop-empty-icon {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+/* Mobile Filter Toggle Button */
+.jf-mobile-filter-btn {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-walnut-800);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: var(--radius-full);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .jf-shop-layout {
+    grid-template-columns: 1fr;
+  }
+  .jf-mobile-filter-btn {
+    display: inline-flex;
+  }
+  .jf-filter-sidebar {
+    position: fixed;
+    top: 0;
+    left: -320px;
+    width: 300px;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 990;
+    transition: transform var(--transition-smooth);
+    border-radius: 0;
+  }
+  .jf-filter-sidebar.is-open {
+    transform: translateX(320px);
+  }
+}
